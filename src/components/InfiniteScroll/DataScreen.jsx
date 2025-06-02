@@ -8,7 +8,7 @@ function DataScreen() {
   const [currentpage, setCurrentPage] = useState(1);
   const [pageData, setPageData] = useState(dataGenerator(5));
 
-  const fetchMoreData = async () => {
+  const fetchMoreData = () => {
     return new Promise((resolve) => {
       setTimeout(
         () => resolve(setCurrentPage((prevState) => prevState + 1)),
@@ -29,7 +29,11 @@ function DataScreen() {
   return (
     <div className="infinte-scroll-container">
       {pageData.map((item, index) => (
-        <AccordianPanel accordianData={item} key={item.question + index} />
+        <AccordianPanel
+          accordianData={item}
+          key={item.question + index}
+          hideButtons={true}
+        />
       ))}
       {/* Sentinel div for intersection observer */}
       <div ref={observerRef} style={{ height: 1 }} />
