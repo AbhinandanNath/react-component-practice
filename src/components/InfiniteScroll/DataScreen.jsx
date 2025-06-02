@@ -2,19 +2,11 @@ import { useEffect, useState } from "react";
 
 import AccordianPanel from "../Accordian/AccordianPanel";
 import useInfiniteScroll from "../../hooks/useInfiniteScroll";
-
-function genereateData(dataLength) {
-  return Array.from({ length: dataLength }, (_, i) => {
-    return {
-      question: `Item ${i + 1}`,
-      answer: `Item ${i + 1}`,
-    };
-  });
-}
+import { dataGenerator } from "../../util/helperMethod";
 
 function DataScreen() {
   const [currentpage, setCurrentPage] = useState(1);
-  const [pageData, setPageData] = useState(genereateData(5));
+  const [pageData, setPageData] = useState(dataGenerator(5));
 
   const fetchMoreData = async () => {
     return new Promise((resolve) => {
@@ -31,8 +23,8 @@ function DataScreen() {
     console.log(currentpage);
     const startLimit = currentpage * 4;
     const endLimit = startLimit + 4;
-    console.log(genereateData(endLimit));
-    setPageData(genereateData(endLimit));
+    // console.log(dataGenerator(endLimit));
+    setPageData(dataGenerator(endLimit));
   }, [currentpage]);
   return (
     <div className="infinte-scroll-container">

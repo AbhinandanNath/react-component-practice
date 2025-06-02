@@ -1,4 +1,4 @@
-.sixBySixContainer {
+.components-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(1, 1fr); */
@@ -9,7 +9,7 @@
 }
 
 
-.sixBySixContainer fieldset {
+.components-container fieldset {
   font-size: 1.2rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
