@@ -25,7 +25,6 @@
   align-items: center;
   border: 1px solid white;
   border-radius: 0.25rem;
-  height: 25rem;
 }
 
 
@@ -54,6 +53,44 @@
 
 .colFlexStart {
   align-items: flex-start;
+}
+
+/* firework */
+/* Firework animation */
+.firework {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  width: 20rem;
+  height: 20rem;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.firework-circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 60%, transparent 100%);
+  animation: firework-burst 3s infinite forwards;
+}
+
+@keyframes firework-burst {
+  0% {
+    transform: scale(0) translate(0, 0);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5) translate(var(--x), var(--y));
+    opacity: 0;
+  }
 }
 
 
@@ -109,6 +146,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 23rem;
+  min-height: 23rem;
 }
 
 .starSymbol {
@@ -249,10 +288,22 @@
   background: linear-gradient(90deg, rgb(67, 68, 69), rgb(158, 161, 162));
 }
 
+.step-content-done {
+  text-decoration: line-through;
+  text-decoration-color: rgb(2, 159, 250);
+  text-decoration-thickness: 0.15rem;
+}
+
 .step-content-bounce {
   color: rgb(2, 159, 250);
   animation: bounce 1s infinite alternate;
   text-shadow: 1px 1px 10px black;
+}
+
+.data-submitted {
+  color: rgb(0, 222, 59);
+  animation: bounce 1s infinite alternate;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 @keyframes bounce {

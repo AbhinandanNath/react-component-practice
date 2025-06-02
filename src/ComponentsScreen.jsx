@@ -5,23 +5,57 @@ import LandingScreen from "./components/Pagination/LandingScreen";
 import StarRating from "./components/StartRating";
 import MainScreen from "./components/StepperComponent/MainScreen";
 import ToastMessage from "./components/ToastMessage";
+import CircleLandingScreen from "./components/NestedCircle/CircleLandingScreen";
 
 const componentsList = [
-  { legendName: "Stepper", component: <MainScreen /> },
-  { legendName: "Accordian", component: <AccordianLandingScreen /> },
-  { legendName: "File Explorer", component: <FileExplorereScreen /> },
-  { legendName: "Infinite Scroll", component: <DataScreen /> },
-  { legendName: "Toast Message", component: <ToastMessage /> },
-  { legendName: "Star Rating", component: <StarRating /> },
-  { legendName: "Pagination", component: <LandingScreen /> },
+  {
+    legendName: "Stepper",
+    component: <MainScreen />,
+    class: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Accordian",
+    component: <AccordianLandingScreen />,
+    class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "File Explorer",
+    component: <FileExplorereScreen />,
+    class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "Infinite Scroll",
+    component: <DataScreen />,
+    class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "Nested Circle",
+    component: <CircleLandingScreen />,
+    class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "Toast Message",
+    component: <ToastMessage />,
+    class: "cardbox applyBorder",
+  },
+  {
+    legendName: "Star Rating",
+    component: <StarRating />,
+    class: "cardbox applyBorder",
+  },
+  {
+    legendName: "Pagination",
+    component: <LandingScreen />,
+    class: "cardbox rowFlexStart applyBorder",
+  },
 ];
 
 function ComponentsScreen() {
   return (
     <>
-      {componentsList.map(({ legendName, component }, index) => {
+      {componentsList.map(({ legendName, component, className }, index) => {
         return (
-          <fieldset key={legendName + index} className="cardbox  applyBorder">
+          <fieldset key={legendName + index} className={className}>
             <legend>{legendName}</legend>
             {component}
           </fieldset>
