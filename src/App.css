@@ -1,0 +1,369 @@
+.sixBySixContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
+  width: 100%;
+  gap: 0.6rem;
+  padding: 1rem;
+
+}
+
+
+.sixBySixContainer fieldset {
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.applyBorder {
+  border: 1px solid white;
+  border-radius: 0.25rem;
+}
+
+.cardbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  height: 25rem;
+}
+
+
+.button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  background: linear-gradient(90deg, rgb(45, 43, 43), grey);
+  box-shadow: 0px 0px 10px 2px rgb(81, 80, 80);
+}
+
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(38, 177, 205), rgb(2, 159, 250));
+}
+
+.rowFlexStart {
+  justify-content: flex-start;
+}
+
+.colFlexEnd {
+  align-items: flex-end;
+}
+
+.colFlexStart {
+  align-items: flex-start;
+}
+
+
+
+/* toast message css */
+
+.toast-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.toast-button-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toast-message-box {
+  width: 15rem;
+  height: 2rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  animation: slideIn 2s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  padding: 1rem;
+  backdrop-filter: blur(40px);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Star rating CsS */
+.starRating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.starSymbol {
+  font-size: 3rem;
+  text-shadow: #fce304;
+  cursor: pointer;
+}
+
+.goldenStar {
+  color: rgb(255, 226, 3);
+
+}
+
+.starInputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.starInputField {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: rgb(177, 192, 197);
+  padding: 1rem;
+  border: 2px solid #0d373e;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: bold;
+  box-shadow: 1px 1px 10px white;
+  text-align: right;
+}
+
+/* Pagination  */
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.post-image {
+  width: 5rem;
+  height: 10rem;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 5px white;
+}
+
+.pagination-container {
+  margin: 1rem 0rem 1rem 0rem;
+
+}
+
+.pagination-button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background-color: aliceblue;
+  outline: none;
+  border-radius: 0.25rem;
+  color: black;
+  margin-right: 0.875rem;
+  border: none;
+}
+
+.pagination-button:hover {
+  background-color: rgb(4, 201, 250);
+  color: black;
+}
+
+.active-pagination-button {
+  background: linear-gradient(90deg, rgb(38, 177, 205), rgb(2, 159, 250));
+  color: rgb(255, 255, 255);
+}
+
+.disable-pagination-button {
+  background-color: #38393a;
+  color: rgb(255, 255, 255);
+}
+
+
+/* Stepper */
+
+.step-container {
+  margin-left: 0.25rem;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+}
+
+.stepper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgb(67, 68, 69), rgb(158, 161, 162));
+  position: relative;
+
+}
+
+.step-line {
+  width: 0.15rem;
+  height: 0%;
+  display: flex;
+  color: white;
+  background: linear-gradient(90deg, rgb(67, 68, 69), rgb(158, 161, 162));
+  position: absolute;
+  top: 2rem;
+  transition: height 0.5s ease-in;
+}
+
+.active-current-step {
+  height: 2rem;
+  background: linear-gradient(90deg, rgb(38, 177, 205), rgb(2, 159, 250));
+}
+
+.active-current-step-line {
+  height: 3rem;
+  background: linear-gradient(90deg, rgb(38, 177, 205), rgb(2, 159, 250));
+}
+
+.inactive-current-step-line {
+  height: 3rem;
+  background: linear-gradient(90deg, rgb(67, 68, 69), rgb(158, 161, 162));
+}
+
+.step-content-bounce {
+  color: rgb(2, 159, 250);
+  animation: bounce 1s infinite alternate;
+  text-shadow: 1px 1px 10px black;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(0.5rem);
+    transform: scale(1.08);
+  }
+
+}
+
+.stepper-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.step-button {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.step-button-active {
+  background: linear-gradient(90deg, rgb(38, 177, 205), rgb(2, 159, 250));
+}
+
+.step-button-inactive {
+  background: linear-gradient(90deg, rgb(67, 68, 69), rgb(158, 161, 162));
+}
+
+.step-button:hover {
+  background: linear-gradient(90deg, rgb(0, 59, 111), rgb(3, 133, 246));
+  ;
+}
+
+
+/* File Exploroer */
+
+
+.explorer-container {
+  border-left: 1px solid rgb(246, 246, 246);
+  padding-left: 0.5rem;
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 23rem;
+  width: 97%;
+
+  span {
+    margin: 0.5rem;
+    /* padding: 0.5rem; */
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1rem;
+  }
+}
+
+/* Accordian Panel */
+
+.accordian-container {
+  overflow-y: auto;
+  max-height: 23rem;
+  min-height: 23rem;
+  width: 100%;
+}
+
+.accordian-panel-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  width: 94%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  color: black;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(187, 189, 190), rgb(251, 251, 251));
+  transition: height 0.5s ease-out;
+}
+
+.accordian-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.accordian-panel-expand {
+  height: 12rem;
+}
+
+.accordian-panel-collapse {
+  height: 3rem;
+}
+
+/* infinte Scroll  */
+
+.infinte-scroll-container {
+
+  max-height: 23rem;
+  min-height: 23rem;
+  width: 100%;
+  overflow-y: auto;
+}
