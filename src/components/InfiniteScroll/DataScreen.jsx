@@ -20,7 +20,7 @@ function DataScreen() {
   const { observerRef, isDataFetching } = useInfiniteScroll(fetchMoreData);
 
   useEffect(() => {
-    console.log(currentpage);
+    // console.log(currentpage);
     const startLimit = currentpage * 4;
     const endLimit = startLimit + 4;
     // console.log(dataGenerator(endLimit));

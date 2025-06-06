@@ -42,7 +42,7 @@ export default function LandingScreen() {
 
   //   console.log(startLimit, endLimit);
   return (
-    <div>
+    <div className="pagination-component">
       {postData.length == 0 ? (
         <p> loading Data</p>
       ) : (

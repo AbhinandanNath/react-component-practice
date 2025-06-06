@@ -6,6 +6,10 @@ import StarRating from "./components/StartRating";
 import MainScreen from "./components/StepperComponent/MainScreen";
 import ToastMessage from "./components/ToastMessage";
 import CircleLandingScreen from "./components/NestedCircle/CircleLandingScreen";
+import ToggleTheme from "./Design Pattern/Singelton/ToggleTheme";
+import CLockLandingScreen from "./Design Pattern/Observer/CLockLandingScreen";
+import VirtualizedListGrid from "./components/VirtualizedList/VirtualizedListGrid";
+import TicTacToe from "./components/ticTacToe/TicTacToe";
 
 const componentsList = [
   {
@@ -34,6 +38,11 @@ const componentsList = [
     class: "cardbox rowFlexStart colFlexStart applyBorder",
   },
   {
+    legendName: "Virtualized List",
+    component: <VirtualizedListGrid />,
+    class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
     legendName: "Toast Message",
     component: <ToastMessage />,
     class: "cardbox applyBorder",
@@ -46,6 +55,21 @@ const componentsList = [
   {
     legendName: "Pagination",
     component: <LandingScreen />,
+    class: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Singelton Theme Manager",
+    component: <ToggleTheme />,
+    class: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Observe Pattern Clock",
+    component: <CLockLandingScreen />,
+    class: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Tic Tac Toe",
+    component: <TicTacToe />,
     class: "cardbox rowFlexStart applyBorder",
   },
 ];

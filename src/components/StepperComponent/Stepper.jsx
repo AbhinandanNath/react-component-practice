@@ -54,7 +54,7 @@ function checkIsLastStep(currentPostion, totalSteps) {
 
 function Stepper({ stepConfig }) {
   const { width, height } = useWindowSize();
-  console.log(useWindowSize());
+  // console.log(useWindowSize());
   const [currentStep, setCurrentStep] = useState(0);
   let totalSteps = stepConfig.length;
 
