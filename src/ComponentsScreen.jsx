@@ -10,6 +10,7 @@ import ToggleTheme from "./Design Pattern/Singelton/ToggleTheme";
 import CLockLandingScreen from "./Design Pattern/Observer/CLockLandingScreen";
 import VirtualizedListGrid from "./components/VirtualizedList/VirtualizedListGrid";
 import TicTacToe from "./components/ticTacToe/TicTacToe";
+import FileUploadScreen from "./components/File Upload/FileUploadScreen";
 
 const componentsList = [
   {
@@ -21,6 +22,11 @@ const componentsList = [
     legendName: "Accordian",
     component: <AccordianLandingScreen />,
     class: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "Tic Tac Toe",
+    component: <TicTacToe />,
+    class: "cardbox rowFlexStart applyBorder",
   },
   {
     legendName: "File Explorer",
@@ -48,6 +54,11 @@ const componentsList = [
     class: "cardbox applyBorder",
   },
   {
+    legendName: "File Upload",
+    component: <FileUploadScreen />,
+    class: "cardbox applyBorder",
+  },
+  {
     legendName: "Star Rating",
     component: <StarRating />,
     class: "cardbox applyBorder",
@@ -65,11 +76,6 @@ const componentsList = [
   {
     legendName: "Observe Pattern Clock",
     component: <CLockLandingScreen />,
-    class: "cardbox rowFlexStart applyBorder",
-  },
-  {
-    legendName: "Tic Tac Toe",
-    component: <TicTacToe />,
     class: "cardbox rowFlexStart applyBorder",
   },
 ];

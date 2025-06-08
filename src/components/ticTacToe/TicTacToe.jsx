@@ -27,6 +27,10 @@ function TicTacToe() {
       [2, 4, 6],
     ];
 
+    // function transpose(matrix) {
+    //   return matrix[0].map((_, colIndex) => matrix.map((row) => row[colIndex]));
+    // }
+
     for (let combination of winningCombinations) {
       const [a, b, c] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {

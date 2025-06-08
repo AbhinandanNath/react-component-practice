@@ -407,8 +407,13 @@
   width: 99%;
 }
 
+.accordian-panel p {
+  margin: 0rem;
+  padding: 0rem;
+}
+
 .accordian-panel-expand {
-  height: 12rem;
+  height: 10rem;
 }
 
 .accordian-panel-collapse {
@@ -585,4 +590,71 @@
     transform: translateY(1rem);
   }
 
+}
+
+
+/* File upload */
+
+.fileUploadComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  /* background: linear-gradient(90deg, white, grey); */
+  border-radius: 0.25rem;
+  border: 2px dashed #ccc;
+  margin-bottom: 1rem;
+
+}
+
+.fileUploadComponent input {
+  display: none;
+}
+
+.fileUploadComponent label {
+  text-align: center;
+  width: 7rem;
+  background: linear-gradient(180deg, rgb(5, 212, 5), rgb(2, 116, 2));
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.fileUploadComponent label:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 20px 20px black;
+  background: linear-gradient(90deg, rgb(42, 250, 0), rgb(149, 241, 0));
+}
+
+.fileUpload-preview {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  align-items: center;
+  font-size: 1rem;
+  background: linear-gradient(90deg, white, grey);
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.fileUpload-preview-remove {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(148, 0, 0), rgb(212, 1, 1));
+  text-shadow: 2px 2px 10px 20px black;
+}
+
+.fileUpload-preview-remove:hover {
+  transform: scale(1.1);
 }

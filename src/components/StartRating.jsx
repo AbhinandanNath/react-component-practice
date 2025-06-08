@@ -56,7 +56,7 @@ export function StartCountInput({ updateStarOnInput, starInput }) {
   }
   return (
     <div className="starInputContainer">
-      <label htmlFor="circleInput">Number of Circles : </label>
+      <label htmlFor="circleInput">Number of Stars : </label>
       <input
         id="starInput"
         type="number"
