@@ -3,7 +3,7 @@ import { FixedSizeList as List } from "react-window";
 const data = Array.from({ length: 100 }, (_, index) => `Item ${index + 1}`);
 function VirtualizedList() {
   return (
-    <List itemSize={40} itemCount={data.length} height={400} width="30rem">
+    <List itemSize={40} itemCount={data.length} height={400} width="99%">
       {({ index, style }) => (
         <div
           style={{

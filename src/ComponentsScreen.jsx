@@ -11,81 +11,94 @@ import CLockLandingScreen from "./Design Pattern/Observer/CLockLandingScreen";
 import VirtualizedListGrid from "./components/VirtualizedList/VirtualizedListGrid";
 import TicTacToe from "./components/ticTacToe/TicTacToe";
 import FileUploadScreen from "./components/File Upload/FileUploadScreen";
+import ReactCarousel from "./components/React Carousel/ReactCarousel";
+
+import SnakeScreen from "./components/Snake Game/SnakeScreen";
 
 const componentsList = [
   {
     legendName: "Stepper",
     component: <MainScreen />,
-    class: "cardbox rowFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart applyBorder",
   },
   {
     legendName: "Accordian",
     component: <AccordianLandingScreen />,
-    class: "cardbox rowFlexStart colFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
   },
   {
     legendName: "Tic Tac Toe",
     component: <TicTacToe />,
-    class: "cardbox rowFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Snake Game",
+    component: <SnakeScreen />,
+    appliedClass: "cardbox applyBorder",
   },
   {
     legendName: "File Explorer",
     component: <FileExplorereScreen />,
-    class: "cardbox rowFlexStart colFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
   },
   {
     legendName: "Infinite Scroll",
     component: <DataScreen />,
-    class: "cardbox rowFlexStart colFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
   },
   {
     legendName: "Nested Circle",
     component: <CircleLandingScreen />,
-    class: "cardbox rowFlexStart colFlexStart applyBorder",
+    appliedClass: "cardbox colFlexStart applyBorder",
   },
   {
     legendName: "Virtualized List",
     component: <VirtualizedListGrid />,
-    class: "cardbox rowFlexStart colFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+  {
+    legendName: "React Carousel",
+    component: <ReactCarousel />,
+    appliedClass: "cardbox applyBorder",
   },
   {
     legendName: "Toast Message",
     component: <ToastMessage />,
-    class: "cardbox applyBorder",
+    appliedClass: "cardbox applyBorder",
   },
   {
     legendName: "File Upload",
     component: <FileUploadScreen />,
-    class: "cardbox applyBorder",
+    appliedClass: "cardbox colFlexStart applyBorder",
   },
   {
     legendName: "Star Rating",
     component: <StarRating />,
-    class: "cardbox applyBorder",
+    appliedClass: "cardbox applyBorder",
   },
   {
     legendName: "Pagination",
     component: <LandingScreen />,
-    class: "cardbox rowFlexStart applyBorder",
+    appliedClass: "cardbox rowFlexStart applyBorder",
   },
   {
     legendName: "Singelton Theme Manager",
     component: <ToggleTheme />,
-    class: "cardbox rowFlexStart applyBorder",
+    appliedClass: "cardbox  applyBorder",
   },
   {
     legendName: "Observe Pattern Clock",
     component: <CLockLandingScreen />,
-    class: "cardbox rowFlexStart applyBorder",
+    appliedClass: "cardbox colFlexStart applyBorder",
   },
 ];
 
 function ComponentsScreen() {
   return (
     <>
-      {componentsList.map(({ legendName, component, className }, index) => {
+      {componentsList.map(({ legendName, component, appliedClass }, index) => {
         return (
-          <fieldset key={legendName + index} className={className}>
+          <fieldset key={legendName + index} className={appliedClass}>
             <legend>{legendName}</legend>
             {component}
           </fieldset>

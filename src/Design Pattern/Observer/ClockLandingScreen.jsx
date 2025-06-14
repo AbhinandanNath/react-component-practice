@@ -4,7 +4,7 @@ import AnalogClockObserver2 from "./AnalogClockObserver2";
 
 function CLockLandingScreen() {
   return (
-    <div>
+    <div className="defaultFullWidthContainer">
       <ClockSubject />
       <DigitalClockObserver1 />
       <AnalogClockObserver2 />

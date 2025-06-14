@@ -14,7 +14,7 @@ export default function ToggleTheme() {
 
   return (
     <div
-      className={`themeManager applyBorder ${
+      className={`defaultFullWidthContainer themeManager applyBorder ${
         theme == "light" ? "lightTheme" : "darkTheme"
       }`}
     >

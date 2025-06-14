@@ -6,3 +6,9 @@ export function dataGenerator(dataLength) {
     };
   });
 }
+
+export function generateRandomTwoElements(inputRange) {
+  return Array.from({ length: 2 }, () =>
+    Math.floor(Math.random() * inputRange)
+  );
+}

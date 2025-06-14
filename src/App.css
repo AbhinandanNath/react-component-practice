@@ -8,6 +8,11 @@
 
 }
 
+.defaultFullWidthContainer {
+  width: 100%;
+  height: 100%;
+}
+
 
 .components-container fieldset {
   font-size: 1.2rem;
@@ -385,7 +390,7 @@
 
 .accordian-panel-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
@@ -595,6 +600,8 @@
 
 /* File upload */
 
+
+
 .fileUploadComponent {
   display: flex;
   flex-direction: column;
@@ -657,4 +664,114 @@
 
 .fileUpload-preview-remove:hover {
   transform: scale(1.1);
+}
+
+
+/* // react carousel */
+
+.carousel-image-container {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.carousel-image {
+  object-fit: cover;
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.carousel-image.fade-out {
+  opacity: 0;
+}
+
+.carousel-left-btn,
+.carousel-right-btn {
+  backdrop-filter: blur(30px);
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-left-btn:hover,
+.carousel-right-btn:hover {
+  background: linear-gradient(90deg, rgb(3, 120, 223), rgb(3, 133, 246));
+}
+
+.carousel-left-btn {
+  top: 46%;
+  left: 2%
+}
+
+.carousel-right-btn {
+  top: 46%;
+  right: 2%;
+}
+
+/* snake-board */
+
+
+.snake-board-container {
+  height: 89%;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.snake-board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+}
+
+.snake-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snake {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  background-color: green;
+
+}
+
+
+
+.food {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: blink 2s linear infinite;
+  box-shadow: 1px 1px 20px 1px rgb(221, 221, 135);
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
