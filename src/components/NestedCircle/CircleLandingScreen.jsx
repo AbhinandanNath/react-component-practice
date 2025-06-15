@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { styled } from "styled-components";
 import Circle from "./Circle";
-import CircleNumberField from "./circleInputField";
+import CircleNumberField from "./CircleNumberField";
 
 const NestedCircleComp = styled.div`
   display: flex;

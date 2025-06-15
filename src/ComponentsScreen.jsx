@@ -89,7 +89,7 @@ const componentsList = [
   },
   {
     legendName: "Observe Pattern Clock",
-    component: <CLockLandingScreen />,
+    component: <ClockLandindScreen />,
     appliedClass: "cardbox colFlexStart applyBorder",
   },
 ];
