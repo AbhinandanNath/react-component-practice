@@ -17,16 +17,6 @@ import SnakeScreen from "./components/Snake Game/SnakeScreen";
 
 const componentsList = [
   {
-    legendName: "Stepper",
-    component: <MainScreen />,
-    appliedClass: "cardbox rowFlexStart applyBorder",
-  },
-  {
-    legendName: "Accordian",
-    component: <AccordianLandingScreen />,
-    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
-  },
-  {
     legendName: "Tic Tac Toe",
     component: <TicTacToe />,
     appliedClass: "cardbox rowFlexStart applyBorder",
@@ -36,6 +26,17 @@ const componentsList = [
     component: <SnakeScreen />,
     appliedClass: "cardbox applyBorder",
   },
+  {
+    legendName: "Stepper",
+    component: <MainScreen />,
+    appliedClass: "cardbox rowFlexStart applyBorder",
+  },
+  {
+    legendName: "Accordian",
+    component: <AccordianLandingScreen />,
+    appliedClass: "cardbox rowFlexStart colFlexStart applyBorder",
+  },
+
   {
     legendName: "File Explorer",
     component: <FileExplorereScreen />,
