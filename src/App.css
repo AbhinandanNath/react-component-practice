@@ -469,7 +469,7 @@
   padding-left: 0.5rem;
   cursor: pointer;
   overflow-y: auto;
-  max-height: 23rem;
+  max-height: 58vh;
   width: 97%;
 
   span {
