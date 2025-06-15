@@ -1,2 +1,2 @@
 # react-component-practice
-A react Project for different React Componetsasked in Frontedn Interviews
+A React Project for different React Components asked in Frontend Interviews
