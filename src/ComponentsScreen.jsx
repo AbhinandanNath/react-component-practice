@@ -7,7 +7,7 @@ import MainScreen from "./components/StepperComponent/MainScreen";
 import ToastMessage from "./components/ToastMessage";
 import CircleLandingScreen from "./components/NestedCircle/CircleLandingScreen";
 import ToggleTheme from "./Design Pattern/Singelton/ToggleTheme";
-import CLockLandingScreen from "./Design Pattern/Observer/CLockLandingScreen";
+import ClockLandindScreen from "./Design Pattern/Observer/ClockLandindScreen";
 import VirtualizedListGrid from "./components/VirtualizedList/VirtualizedListGrid";
 import TicTacToe from "./components/ticTacToe/TicTacToe";
 import FileUploadScreen from "./components/File Upload/FileUploadScreen";

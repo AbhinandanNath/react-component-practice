@@ -2,7 +2,7 @@ import ClockSubject from "./ClockSubject";
 import DigitalClockObserver1 from "./DigitalClock-Observer1";
 import AnalogClockObserver2 from "./AnalogClockObserver2";
 
-function CLockLandingScreen() {
+function ClockLandindScreen() {
   return (
     <div className="defaultFullWidthContainer">
       <ClockSubject />
@@ -12,4 +12,4 @@ function CLockLandingScreen() {
   );
 }
 
-export default CLockLandingScreen;
+export default ClockLandindScreen;
